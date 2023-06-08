@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+body {
+    height: 100%;
+    background-color: #222222;
+}
+
+.container {
+    width: 70%;
+    height: 70%;
+    margin: 1% auto;
+}
+.myTable{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 800;
+	color:white;
+	padding: 10px;	
+	margin: auto;
+    width: 800px;
+    border-spacing: 120px 15px
+    
+    
+}
+#td{
+    width: 200px;
+}
+.ui {
+    border: 0;
+    box-shadow: 0 0 10px 0 rgba(149, 184, 209, .5);
+    border-radius: 10px;
+    width: 60%;
+    margin: 0 auto;
+    padding: 10%;
+    display: flex;
+    gap: 20px;
+    background-color: rgb(0, 0, 0);
+}
+
+.container-left {
+    width: 50%;
+}
+
+.container-right {
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.card {
+    width: 360px;
+    height: 230px;
+    margin: 0 auto;
+    background: linear-gradient(148deg, rgb(255, 81, 0) 13%, rgb(51, 17, 131) 41%, rgb(114, 182, 235) 68%, rgb(255, 255, 255) 90%);
+    border: 1px solid rgba(0,0,0,.3);
+    border-radius: 15px;
+}
+
+.intern {
+    padding: 20px;
+}
+
+.card-number {
+    margin-top: 40px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: white;
+    display: flex;
+}
+.bank {
+    margin-top: 10px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: white;
+    display: flex;
+}
+
+.card-holder {
+    color: white;
+}
+
+.card label {
+    font-size: .7rem;
+    opacity: 30%;
+}
+
+.card-infos {
+    margin-top: 30px;
+    display: flex;
+    width: 75%;
+    justify-content: space-between;
+    color: white;
+}
+
+#creditcard {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-size: 1.1rem;
+    color: white;
+    text-transform: uppercase;
+}
+
+.number-container, .name-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.month-container, .year-container {
+    width: 50%;
+}
+.system{
+  width: 20%;
+    position: relative;
+    left: 80%;
+    bottom: 20px;
+    height: auto;
+}
+select {
+    border: 0;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #333333;
+    color: white;
+    font-weight: 600;
+    font-size: 1.1rem;
+    outline: 0;
+    width: 75%;
+}
+input {
+    border: 0;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #333333;
+    color: white;
+    font-weight: 600;
+    font-size: 1.1rem;
+    outline: 0;
+    width: 90%;
+}
+
+input[type="text"]:focus {
+    border: 1px solid #95B8D1;
+}
+
+input#valid-thru-text {
+    width: 80%;
+}
+
+input[type="submit"] {
+    width: 95%;
+    background-color: #008cb1;
+    cursor: pointer;
+}
+
+.infos-container {
+    display: flex;
+}
+
+@media (max-width: 1024px) {
+    .ui {
+        flex-direction: column-reverse;
+    }
+
+    .container-left, .container-right {
+        width: 100%;
+    }
+}

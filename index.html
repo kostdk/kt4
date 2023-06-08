@@ -1,0 +1,80 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>KT4</title>
+</head>
+<body>    
+    <main class="container">        
+        <section class="ui">
+            <div class="container-left">
+                <form id="creditcard">
+                    <div class="bank-container">
+                        <label>Название банка</label>
+	                        <p><input type="text" id='bank-name' name="bank-name" placeholder="Сбербанк" required onkeypress="return (event.charCode >= 1040 && event.charCode <= 1071) || (event.charCode >= 1072 && event.charCode <= 1103) || event.key == ' '"></p>
+                      </div>
+                    <div class="system-container">
+                        <label>Платежная система</label>
+                    <select name="bank-system" id='bank-system'>
+                        <option value="МИР">МИР</option>
+                        <option value="MasterCard">MasterCard</option>
+                        <option value="VISA">VISA</option>
+                        <option value="American Express">American Express</option>
+                        <option value="Maestro">Maestro</option>
+                    </select>
+                    </div>
+                  <div class="number-container">
+                        <label>Номер карты</label>
+	                        <p><input type="text" name="card_numb" id='card-number' placeholder="0000 0000 0000 0000" maxlength="19" required onkeypress ="return event.charCode>=48 && event.charCode<=57"></p></div>
+                  <div class="name-container">
+                        <label>Имя держателя</label>
+                            <p><input type="text" name="name-text" id='name-text' placeholder="Имя Фамилия" maxlength="24" required onkeypress="return (event.charCode > 64 && event.charCode < 91) || (event.charCode > 96 && event.charCode < 123) || event.key == ' '"></p></div>
+                    <div class="infos-container">
+                      <div class="expiration-container">
+                            <label>Действительна до</label>
+                            <input type="text" name="valid-thru-text" id="valid-thru-text" maxlength="5" placeholder="01/23"
+                            required
+                            
+                            onkeypress="return event.charCode >=48 && event.charCode <= 57">
+                      </div></div>
+                    <input type="submit" value="Отправить" id="add">
+                </form>
+          </div></div>
+  <div class="container-right">
+                <div class="card">
+                    <div class="intern">                        
+                        <div class="bank">
+                            <div class="bank-vl">Сбербанк</div>
+                        </div>
+                        <div class="card-number">
+                            <div class="number-vl">0000 0000 0000 0000</div>
+                        </div>
+                        <div class="card-infos">
+                            <div class="card-holder">
+                                <label>Владелец</label>
+                                <div class="name-vl">NAME SURNAME</div>
+                            </div>                            
+                            <div class="exp">
+                                <label>Срок</label>
+                                <div class="expiration-vl">01/23</div>
+                            </div>                            
+                        </div>                      
+                        <img class="system" id='system' src='https://upload.wikimedia.org/wikipedia/commons/b/b9/Mir-logo.SVG.svg' alt="system">                 
+                </div>
+            </div>              
+  </section>  
+    <table class="myTable" id="myTable">
+        <tr>
+            <td>Название банка</td>
+            <td>Платежная система</td>
+            <td>Номер карты</td>
+            <td>Имя держателя</td>
+            <td>Срок действия карты</td>
+        </tr>   </table>  
+  <script src="script.js"></script>
+</main>
+
+</body>
+</html>
